@@ -1,11 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet');
-
 html,
 body {
     height: 100%;
 }
-
-.greetings,
 p,
 h1,
 h2 {
@@ -13,11 +9,11 @@ h2 {
 }
 
 .flex-container {
-    display: flex;
+    display: grid;
     flex-direction: column;
     margin: 0 auto;
-    max-width: 1200px;
-    background-color: #E6E6E6;
+    background-image: url("img/font3.jpg");
+    background-size: 100%;
     padding: 5px;
     height: 100%;
 }
@@ -37,7 +33,7 @@ ul  {
 }
 
 ul li {
-    margin-right: 20px;
+    margin-right: 60px;
 }
 
 li a {
@@ -49,8 +45,8 @@ li a {
 }
 
 .logo img {
-    width: 70px;
-    height: 70px;
+    width: 30px;
+    height: 30px;
     margin-left: 10px;
 }
 
@@ -66,29 +62,35 @@ li a {
 }
 
 .fullname {
+    margin-top: -150px;
     margin-right: 20px;
     flex-basis: 750px;
 }
 
 .myImg {
-    margin-top: 150px;
+    margin-top: 5px;
     padding-left: 20px;
-    flex-basis: 450px;
+    flex-basis: 1450px;
 }
 
 .knowledge {
-    display: flex;
-    justify-content: center;
+    font-family: 'Impact', fantasy;
+    margin-top: 350px;
+    padding-left:620px;
+    color: #CED8F6;
+    display: block;
+    position: absolute
 }
 
 .article {
+    text-align: center;
     margin-top: 2em;
 }
 
 
 p {
     font-size: 1.2rem;
-    color: #08298A;
+    color: #CED8F6;
     padding-left: 20px;
 }
 
@@ -103,7 +105,8 @@ h2 {
 }
 
 h1 {
-    color: #08298A;
+    margin-top: -60px;
+    color: #0e42d7;
     text-align: center;
     font-size: 2rem;
 }
@@ -112,3 +115,44 @@ h1 {
     background-color: #5882FA;
     flex: 0 0 auto;
 }
+
+
+#zatemnenie {
+    background: rgba(102, 102, 102, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#okno {
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    padding: 15px;
+    border: 3px solid #0000cc;
+    border-radius: 10px;
+    color: #0000cc;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #fff;
+}
+#zatemnenie:target {display: block;}
+.close {
+    display: inline-block;
+    border: 1px solid #0000cc;
+    color: #0000cc;
+    padding: 0 12px;
+    margin: 10px;
+    text-decoration: none;
+    background: #f2f2f2;
+    font-size: 14pt;
+    cursor:pointer;
+}
+
+.close:hover {background: #e6e6ff;}
